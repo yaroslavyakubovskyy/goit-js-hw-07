@@ -4,11 +4,11 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-function btnHandler() {
+const btnHandler = () => {
   const newColor = getRandomHexColor();
   document.body.style.backgroundColor = newColor;
   spn.textContent = newColor;
-}
+};
 
 const btn = document.querySelector('.change-color');
 const spn = document.querySelector('.color');
